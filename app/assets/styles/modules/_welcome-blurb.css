@@ -1,11 +1,37 @@
 .welcome-blurb {
   background-color: $mainRed;
+  color: white;
   padding: 0 18px 1px 18px;
   margin-bottom: 98px;
 
   @mixin atLarge {
     margin-bottom: 0;
     padding: 0 1.8125rem 1px 1.8125rem;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+    padding: 1rem 0;
+
+    &--content {
+      font-size: 1.25rem;
+      line-height: 1.6875rem;
+
+      .section-title {
+        text-align: left;
+      }
+    }
+
+    &--link {
+      font-size: 3.125rem;
+      text-decoration: underline;
+      width: auto;
+      flex-shrink: 0;
+      padding: 2rem 0 2rem 3.75rem; 
+      border-left: 1px solid white;
+    }
   }
 
   &__photo {

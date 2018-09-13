@@ -935,7 +935,8 @@ a {
 @media (min-width: 530px) {
 
 .section-title {
-    font-size: 2.5rem
+    font-size: 2.5rem;
+    line-height: 2.875rem
 
 }
   }
@@ -976,6 +977,7 @@ a {
 
 .welcome-blurb {
   background-color: #C20000;
+  color: white;
   padding: 0 18px 1px 18px;
   margin-bottom: 98px;
 
@@ -989,6 +991,47 @@ a {
 
 }
   }
+
+.welcome-blurb__text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: horizontal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: horizontal;
+            flex-direction: horizontal;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 0;
+  }
+
+.welcome-blurb__text--content {
+      font-size: 1.25rem;
+      line-height: 1.6875rem;
+    }
+
+.welcome-blurb__text--content .section-title {
+        text-align: left;
+      }
+
+.welcome-blurb__text--link {
+      font-size: 3.125rem;
+      text-decoration: underline;
+      width: auto;
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+      padding: 2rem 0 2rem 3.75rem; 
+      border-left: 1px solid white;
+    }
 
 .welcome-blurb__photo {
     -webkit-border-radius: 80px;
