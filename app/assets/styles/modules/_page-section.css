@@ -4,28 +4,7 @@
   @mixin atMedium {
     padding: 4.5rem 0;
   }
-
-  &--blue {
-    background-color: $mainRed;
-    color: #FFF;
-  }
-
-  &--no-b-padding-until-medium {
-    padding-bottom: 0;
-
-    @mixin atMedium {
-      padding-bottom: 4.5rem;
-    }
-  }
-
-  &--no-b-padding-until-large {
-    padding-bottom: 0;
-
-    @mixin atLarge {
-      padding-bottom: 4.5rem;
-    }
-  }
-
+  
   &--testimonials {
 
     background-color: #e0e6ef;
