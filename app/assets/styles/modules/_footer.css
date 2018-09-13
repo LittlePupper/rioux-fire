@@ -1,0 +1,63 @@
+.footer {
+  background-color: $mainRed;
+  color: #FFF;
+  padding: 38px 0;
+
+  .wrapper {
+    max-width: none;
+    margin: 0 2rem;
+  }
+
+  &__text {
+    display: block;
+    font-weight: 300;
+    font-size: 0.937rem;
+
+    @mixin atMedium {
+      display: flex;
+      flex-direction: horizontal;
+      align-items: center;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    padding-right: 11.25rem;
+  }
+
+  &__links {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+    line-height: 1.5rem;
+
+    ul {
+      padding: 0;
+      margin: 0 4rem 0 0;
+      list-style-type: none;
+    }
+  }
+
+  &__contact {
+    line-height: 1.5rem;
+  }
+}
+
+.copyright {
+  background-color: $bgDarkGrey;
+  color: white;
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.625rem;
+  padding: 1.5625rem 0;
+}
