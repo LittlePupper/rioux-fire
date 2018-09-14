@@ -18,6 +18,7 @@
     &--content {
       font-size: 1.25rem;
       line-height: 1.6875rem;
+      margin-right: 3.75rem;
 
       .section-title {
         text-align: left;
