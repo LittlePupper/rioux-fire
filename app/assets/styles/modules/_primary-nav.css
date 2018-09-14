@@ -1,6 +1,5 @@
 .primary-nav {
-
-  padding-top: 10px;
+  padding-top: 0;
 
   @mixin atMedium {
     padding-top: 0;
@@ -22,11 +21,11 @@
 
   li {
     list-style: none;
-    padding-right: 7px;
+    padding-left: 3.75rem;
     display: inline-block;
+    font-size: 1.25rem;
 
     @mixin atMedium {
-      padding-right: 20px;
       float: left;
       display:block;
     }
@@ -46,13 +45,24 @@
     text-decoration: none;
     font-weight: 300;
     display: block;
-    padding: 5px 8px;
-    font-size: .8rem;
-    background-color: rgba($mainRed, .5);
+
+    &:after {
+      content: '';
+      margin-top: 3px;
+      display: block;
+      height: 1px;
+      width: 0;
+      background: white;
+      transition: width 0.4s;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
 
     @mixin atMedium {
       font-size: 1rem;
-      padding: 12px 0;
+      padding: 0;
       background-color: transparent;
 
       &.is-current-link {

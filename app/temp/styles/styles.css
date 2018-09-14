@@ -475,10 +475,19 @@ a {
 }
 
 .large-hero {
+  min-height: 100vh;
+  max-height: 100vh;
   position: relative;
-  border-bottom: 10px solid #C20000;
+  overflow: hidden;
+  background-color: #2A2A2A;
 
 }
+
+.large-hero video {
+    width: 100vw; 
+    min-width: 100%;
+    opacity: 0.3;
+  }
 
 .large-hero__text-content {
     padding-top: 88px;
@@ -503,16 +512,19 @@ a {
 
 .large-hero__title {
     font-weight: 300;
-    color: #C20000;
+    color: white;
     font-size: 2.4rem;
     margin: 0;
+    text-shadow: 2px 2px 4px #2A2A2A;
 
   }
 
 @media (min-width: 530px) {
 
 .large-hero__title {
-        font-size: 4.8rem
+      font-size: 4.375rem;
+      line-height: 5.875rem;
+      font-weight: 400
 
   }
   }
@@ -565,9 +577,22 @@ a {
 
 }
 
-.btn--orange {
-      background-color: #C20000;
+.btn--border {
+      margin-top: 3.125rem;
+      background-color: rgba(50, 50, 50, .6);
+      border: 2px solid white;
+      -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+              border-radius: 10px;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      -moz-transition: all .25s;
+      transition: all .25s;
   }
+
+.btn--border:hover {
+        background-color: rgba(25, 25, 25, 1);
+      }
 
 .btn--large {
     padding: 1.1rem 1.9rem;
@@ -577,7 +602,7 @@ a {
 @media (min-width: 530px) {
 
 .btn--large {
-        font-size: 1.25rem
+        font-size: 2rem
 
   }
   }
@@ -783,6 +808,7 @@ a {
 .welcome-blurb__text--content {
       font-size: 1.25rem;
       line-height: 1.6875rem;
+      margin-right: 3.75rem;
     }
 
 .welcome-blurb__text--content .section-title {
@@ -1016,14 +1042,14 @@ Instead, edit gulp/templates/sprite */
 }
 
 .site-header {
-  padding: 10px 0;
+  padding: 50px 0 10px 0;
   position: absolute;
   z-index: 2;
   width: 100%;
-  -webkit-transition: background-color .3s ease-out;
-  -o-transition: background-color .3s ease-out;
-  -moz-transition: background-color .3s ease-out;
-  transition: background-color .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 
 }
 
@@ -1035,12 +1061,13 @@ Instead, edit gulp/templates/sprite */
 
 .site-header {
     position: fixed;
-    background-color: rgba(194,0,0, .3)
+    background-color: default
 
 }
 
     .site-header--dark {
-      background-color: rgba(23, 51, 72, .85);
+      background-color: rgba(42,42,42, .95);
+      padding: 25px 0 20px;
     }
   }
 
@@ -1248,8 +1275,7 @@ Instead, edit gulp/templates/sprite */
       }
 
 .primary-nav {
-
-  padding-top: 10px;
+  padding-top: 0;
 
 }
 
@@ -1282,15 +1308,15 @@ Instead, edit gulp/templates/sprite */
 
 .primary-nav li {
     list-style: none;
-    padding-right: 7px;
+    padding-left: 3.75rem;
     display: inline-block;
+    font-size: 1.25rem;
 
   }
 
 @media (min-width: 800px) {
 
 .primary-nav li {
-      padding-right: 20px;
       float: left;
       display:block
 
@@ -1313,16 +1339,30 @@ Instead, edit gulp/templates/sprite */
     text-decoration: none;
     font-weight: 300;
     display: block;
-    padding: 5px 8px;
-    font-size: .8rem;
-    background-color: rgba(194,0,0, .5);
   }
+
+.primary-nav a:after {
+      content: '';
+      margin-top: 3px;
+      display: block;
+      height: 1px;
+      width: 0;
+      background: white;
+      -webkit-transition: width 0.4s;
+      -o-transition: width 0.4s;
+      -moz-transition: width 0.4s;
+      transition: width 0.4s;
+    }
+
+.primary-nav a:hover:after {
+      width: 100%;
+    }
 
 @media (min-width: 800px) {
 
 .primary-nav a {
       font-size: 1rem;
-      padding: 12px 0;
+      padding: 0;
       background-color: transparent
   }
 

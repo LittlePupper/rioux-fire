@@ -1,6 +1,15 @@
 .large-hero {
+  min-height: 100vh;
+  max-height: 100vh;
   position: relative;
-  border-bottom: 10px solid $mainRed;
+  overflow: hidden;
+  background-color: $bgDarkGrey;
+
+  video {
+    width: 100vw; 
+    min-width: 100%;
+    opacity: 0.3;
+  }
 
   &__text-content {
     padding-top: 88px;
@@ -18,12 +27,15 @@
 
   &__title {
     font-weight: 300;
-    color: $mainRed;
+    color: white;
     font-size: 2.4rem;
     margin: 0;
+    text-shadow: 2px 2px 4px $bgDarkGrey;
 
     @mixin atSmall {
-        font-size: 4.8rem;
+      font-size: 4.375rem;
+      line-height: 5.875rem;
+      font-weight: 400;
     }
 
   }
