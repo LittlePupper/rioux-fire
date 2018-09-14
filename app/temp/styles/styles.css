@@ -1498,3 +1498,81 @@ Instead, edit gulp/templates/sprite */
       content: "-";
       padding-right: 10px;
     }
+
+.why-choose-us {
+  background-image: url("/assets/images/why-choose-us-bg.png");
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+       background-size: cover;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.why-choose-us__text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: horizontal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: horizontal;
+            flex-direction: horizontal;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 0;
+    font-size: 1.25rem;
+    line-height: 1.6875rem;
+  }
+
+.why-choose-us__text--content {
+      font-size: 1.25rem;
+      line-height: 1.6875rem;
+      border-right: 2px solid rgba(255, 255, 255, .6);
+      padding: 2rem 3.75rem 2rem 0;
+    }
+
+.why-choose-us__text--content h2.section-title {
+        text-align: center;
+      }
+
+.why-choose-us__text--link {
+      font-size: 3.125rem;
+      width: auto;
+      padding: 2rem 0 2rem 3.75rem; 
+    }
+
+.why-choose-us .section-title {
+    text-align: left;
+  }
+
+.why-choose-us ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+.why-choose-us ul li {
+      padding: 30px 0;
+    }
+
+.why-choose-us ul li:before {
+      content: "-";
+      padding-right: 10px;
+    }
