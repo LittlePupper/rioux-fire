@@ -14,8 +14,8 @@
     background-color: default;
 
     &--dark {
-      background-color: rgba($bgDarkGrey, .85);
-      padding: 20px 0;
+      background-color: rgba($bgDarkGrey, .95);
+      padding: 25px 0 20px;
     }
 
   }

@@ -45,9 +45,20 @@
     text-decoration: none;
     font-weight: 300;
     display: block;
-    padding: 5px 8px;
-    font-size: .8rem;
-    background-color: rgba($mainRed, .5);
+
+    &:after {
+      content: '';
+      margin-top: 3px;
+      display: block;
+      height: 1px;
+      width: 0;
+      background: white;
+      transition: width 0.4s;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
 
     @mixin atMedium {
       font-size: 1rem;
