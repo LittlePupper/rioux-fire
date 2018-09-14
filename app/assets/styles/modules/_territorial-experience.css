@@ -1,7 +1,7 @@
 .territorial-experience {
   background-color: $bgLightGrey;
   color: $textGrey;
-  min-height: 100vh;
+  min-height: 120vh;
   display: flex;
   align-items: center;
 

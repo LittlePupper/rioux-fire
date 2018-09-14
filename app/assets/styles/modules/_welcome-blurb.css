@@ -2,7 +2,7 @@
   background-color: $mainRed;
   color: white;
   padding: 0 18px 1px 18px;
-  margin-bottom: 98px;
+  /* margin-bottom: 98px; */
 
   @mixin atLarge {
     margin-bottom: 0;
@@ -10,15 +10,21 @@
   }
 
   &__text {
-    display: flex;
-    flex-direction: horizontal;
-    align-items: center;
-    padding: 1rem 0;
+
+    @mixin atMedium {
+      display: flex;
+      flex-direction: horizontal;
+      align-items: center;
+      padding: 1rem 0;
+    }
 
     &--content {
       font-size: 1.25rem;
       line-height: 1.6875rem;
-      margin-right: 3.75rem;
+
+      @mixin atMedium {
+        margin-right: 3.75rem;
+      }
 
       .section-title {
         text-align: left;
@@ -30,8 +36,16 @@
       text-decoration: underline;
       width: auto;
       flex-shrink: 0;
-      padding: 2rem 0 2rem 3.75rem; 
-      border-left: 1px solid white;
+      padding: 2rem 0 2rem; 
+      border-top: 1px solid white;
+      text-align: center;
+
+      @mixin atMedium {
+        text-align: left;
+        border-top: none;
+        border-left: 1px solid white;
+        padding: 2rem 0 2rem 3.75rem; 
+      }
     }
   }
 
