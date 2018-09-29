@@ -20,14 +20,36 @@
 
     &--content {
       font-size: 1.25rem;
-      line-height: 1.6875rem;
+      line-height: 1.75rem;
 
       @mixin atMedium {
+        padding-right: 2rem;
+      }
+
+      @mixin atXLarge {
         margin-right: 3.75rem;
+        font-size: 1.25rem;
+        line-height: 1.6875rem;
+        padding-right: 0;
       }
 
       .section-title {
         text-align: left;
+        margin-top: 32px;
+
+        @mixin atSmall {
+          font-size: 2rem;
+          line-height: 2.35rem;
+        }
+
+        @mixin atMedium {
+          margin-top: 20px;
+        }
+
+        @mixin atXLarge {
+          font-size: 2.5rem;
+          line-height: 2.875rem;
+        }
       }
     }
 
@@ -36,8 +58,7 @@
       text-decoration: underline;
       width: auto;
       flex-shrink: 0;
-      padding: 2rem 0 2rem; 
-      border-top: 1px solid white;
+      padding: 2rem 0 2.75rem;
       text-align: center;
 
       @mixin atMedium {

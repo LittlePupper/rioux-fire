@@ -21,15 +21,15 @@
 
   li {
     list-style: none;
-    padding-left: 3.75rem;
+    padding: .75rem 1.25rem;
     display: inline-block;
     font-size: 1.25rem;
 
     @mixin atMedium {
       float: left;
-      display:block;
+      display: block;
+      padding-left: 3.75rem;
     }
-
   }
 
   li:last-child {

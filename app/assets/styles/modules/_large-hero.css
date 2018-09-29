@@ -51,7 +51,7 @@
       font-weight: 400;
     }
 
-    @mixin atLarge {
+    @mixin atXLarge {
       font-size: 4.375rem;
       line-height: 5.875rem;
       font-weight: 400;

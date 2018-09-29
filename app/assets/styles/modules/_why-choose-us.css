@@ -30,8 +30,12 @@
       }
 
       @mixin atMedium {
-        border-top: none;
+        border-bottom: none;
         border-right: 2px solid rgba(255, 255, 255, .6);
+        padding: 2rem 3rem 2rem 0; 
+      }
+
+      @mixin atXLarge {
         padding: 2rem 7rem 2rem 0; 
       }
 
@@ -43,14 +47,29 @@
     &--link {
       font-size: 3.125rem;
       width: auto;
-      padding: 0 1rem;
+      padding: 1rem 1rem 0;
+      text-align: center;
 
       @mixin atSmall {
-        padding: 0 2rem;
+        padding: 1rem 2rem 0;
       }
 
       @mixin atMedium {
+        text-align: left;
+        padding: 2rem 0 2rem 3.5rem; 
+      }
+
+      @mixin atXLarge {
         padding: 2rem 0 2rem 9rem; 
+      }
+
+      h2.section-title {
+        text-align: center;
+        margin-bottom: 0;
+
+        @mixin atMedium {
+          text-align: left;
+        }
       }
     }
   }
