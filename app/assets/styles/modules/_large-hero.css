@@ -1,6 +1,9 @@
+.non-index .large-hero {
+  height: 30vh;
+}
+
 .large-hero {
-  min-height: 100vh;
-  max-height: 100vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   background-color: $bgDarkGrey;
@@ -84,8 +87,7 @@
 
   }
 
-  &__image {
-    display:block;
+  img {
+    opacity: .4;
   }
-
 }

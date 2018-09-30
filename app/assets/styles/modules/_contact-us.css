@@ -1,0 +1,73 @@
+.contact-us {
+  background-color: $bgLightGrey;
+  color: $textGrey;
+  display: flex;
+  align-items: center;
+
+  .wrapper {
+    flex-grow: 1;
+  }
+
+  &__text {
+    padding: 1rem 0;
+    flex-direction: column;
+
+    @mixin atMedium {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__blurb {
+      width: 50%;
+      margin: 0 0 1.3rem;
+    }
+  }
+
+  .section-title {
+    text-align: left;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .form-row {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+
+      #email {
+        margin-right: 0.65rem;
+      }
+
+      #phone {
+        margin-left: 0.65rem;
+      }
+    }
+  }
+
+  input, select {
+    width: 50%;
+    margin: 0 0 1.3rem;
+    padding: 8px;
+  } 
+  
+  textarea {
+    width: 50%;
+    margin: 0 0 1.3rem;
+    padding: 8px;
+    min-height: 150px;
+    min-width: 50%;
+    max-width: 50%;
+  }
+
+  button {
+    padding: 8px 15px;
+    background-color: $bgDarkGrey;
+    color: white;
+    border: none;
+  }
+}

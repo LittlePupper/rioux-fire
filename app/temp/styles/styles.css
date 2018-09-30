@@ -492,13 +492,15 @@ a {
     color: #C20000;
 }
 
+.non-index .large-hero {
+  height: 30vh;
+}
+
 .large-hero {
-  min-height: 100vh;
-  max-height: 100vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   background-color: #2A2A2A;
-
 }
 
 .large-hero video {
@@ -607,8 +609,8 @@ a {
   }
   }
 
-.large-hero__image {
-    display:block;
+.large-hero img {
+    opacity: .4;
   }
 
 .btn {
@@ -1374,14 +1376,12 @@ Instead, edit gulp/templates/sprite */
 
 .primary-nav {
   padding-top: 0;
-
 }
 
 @media (min-width: 800px) {
 
 .primary-nav {
     padding-top: 0
-
 }
   }
 
@@ -1466,6 +1466,10 @@ Instead, edit gulp/templates/sprite */
       .primary-nav a.is-current-link {
         color: #fabb69;
       }
+  }
+
+.primary-nav .selected::after {
+   width: 100%;
   }
 
 .reveal-item {
@@ -1635,6 +1639,139 @@ Instead, edit gulp/templates/sprite */
       content: "-";
       padding-right: 10px;
     }
+
+.contact-us {
+  background-color: #F6F6F6;
+  color: #707070;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-us .wrapper {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+       -moz-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+
+.contact-us__text {
+    padding: 1rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+@media (min-width: 800px) {
+
+.contact-us__text {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center
+  }
+  }
+
+.contact-us__text__blurb {
+      width: 50%;
+      margin: 0 0 1.3rem;
+    }
+
+.contact-us .section-title {
+    text-align: left;
+  }
+
+.contact-us form {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+.contact-us form .form-row {
+      width: 50%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+         -moz-box-orient: horizontal;
+         -moz-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+
+.contact-us form .form-row #email {
+        margin-right: 0.65rem;
+      }
+
+.contact-us form .form-row #phone {
+        margin-left: 0.65rem;
+      }
+
+.contact-us input, .contact-us select {
+    width: 50%;
+    margin: 0 0 1.3rem;
+    padding: 8px;
+  }
+
+.contact-us textarea {
+    width: 50%;
+    margin: 0 0 1.3rem;
+    padding: 8px;
+    min-height: 150px;
+    min-width: 50%;
+    max-width: 50%;
+  }
+
+.contact-us button {
+    padding: 8px 15px;
+    background-color: #2A2A2A;
+    color: white;
+    border: none;
+  }
 
 .why-choose-us {
   background-image: url("/assets/images/why-choose-us-bg.png");
