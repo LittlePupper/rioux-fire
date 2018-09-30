@@ -64,7 +64,8 @@
           Okotoks, Alberta</p>
           To get in touch with us, give us a call or send us an email using the form below.
         </div>
-        <form>
+
+        <form action="submit" method="POST">
           <input type="text" name="Name" placeholder="Name" required>
           <input type="text" name="Company" placeholder="Company">
           <div class="form-row">
@@ -82,6 +83,7 @@
           <textarea placeholder="Your message"></textarea>
           <button type="submit">Send</button>
         </form>
+
       </div>
     </div>
   </div>

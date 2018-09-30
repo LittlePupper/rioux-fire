@@ -6,12 +6,17 @@ gulp.task('watch', function() {
 
   browserSync.init({
     notify: false,
-    server: {
-      baseDir: "app"
-    }
+    proxy: "http://localhost:8080/"
+    // server: {
+    //   baseDir: "app"
+    // }
   });
 
   watch('./app/**/index.html', function() {
+    browserSync.reload();
+  });
+
+  watch('./app/**/*.php', function() {
     browserSync.reload();
   });
 
